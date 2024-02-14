@@ -7,5 +7,9 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    return numberStr?.toInt()?.times(MULTIPLIER)?.plus(ITEM)?.rem(DIVIDER)
 }
+
+const val MULTIPLIER = 3
+const val ITEM = 10
+const val DIVIDER = 11
