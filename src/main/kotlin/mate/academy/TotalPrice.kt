@@ -6,5 +6,5 @@ const val DEFAULT_PRICE_PER_PRODUCT : Double = 29.99
     If the price is not provided, use default price per product equal to 29.99
  */
 fun calculateTotalPrice(pricePerProduct: Double?, count: Int) : Double {
-    return pricePerProduct?:DEFAULT_PRICE_PER_PRODUCT.times(count)
+    return (pricePerProduct?:DEFAULT_PRICE_PER_PRODUCT).times(count)
 }
