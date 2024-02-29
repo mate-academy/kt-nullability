@@ -8,3 +8,4 @@ fun calculateTotalPrice(pricePerProduct: Double?, count: Int) : Double {
     var price =  pricePerProduct ?: 29.99
     return price * count
 }
+

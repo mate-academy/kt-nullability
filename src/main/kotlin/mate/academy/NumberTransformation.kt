@@ -7,6 +7,7 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?): Int? {
-
     return numberStr?.toInt()?.times(3)?.plus(10)?.rem(11)
 }
+
+
