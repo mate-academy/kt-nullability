@@ -7,6 +7,11 @@ package mate.academy
 const val DEFAULT_PRICE = 29.99
 
 fun calculateTotalPrice(pricePerProduct: Double?, count: Int): Double {
-    val totalPrice = (pricePerProduct ?: DEFAULT_PRICE) * count
+    val totalPrice = if (pricePerProduct != null) {
+        pricePerProduct * count
+    } else {
+        DEFAULT_PRICE * count
+    }
     return totalPrice
 }
+

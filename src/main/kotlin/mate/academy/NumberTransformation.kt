@@ -8,5 +8,6 @@ package mate.academy
 
 fun getReminder(numberStr: String?): Int? {
     val number: Int? = numberStr?.toInt()
-    return number?.times(3)?.plus(10)?.rem(11)
+    return number?.times(3)?.plus(10)?.rem(other = 11)
 }
+
