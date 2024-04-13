@@ -7,5 +7,5 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    return if(numberStr?.isNotEmpty() == true) numberStr.toInt().times(3).plus(10).rem(11) else null
 }
