@@ -6,6 +6,7 @@ package mate.academy
     If the number is not present return null
  */
 
-fun getReminder(numberStr: String?) : Int? {
-    return null
+fun getReminder(numberStr: String?): Int? {
+    val result : Double? = if (numberStr != null) (numberStr.toDouble() * 3 + 10) % 11 else null
+    return result?.toInt()
 }
