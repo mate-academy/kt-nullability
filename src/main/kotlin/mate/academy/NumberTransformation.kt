@@ -9,5 +9,5 @@ const val NUMBER_THREE = 11
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return numberStr?.times(NUMBER_ONE)?.plus(NUMBER_TWO)?.rem(NUMBER_THREE)
+    return numberStr.toInrOrNull()?.times(NUMBER_ONE)?.plus(NUMBER_TWO)?.rem(NUMBER_THREE)
 }
