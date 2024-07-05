@@ -6,6 +6,6 @@ package mate.academy
     If the number is not present return null
  */
 
-fun getReminder(numberStr: String?) : Int? {
-    return null
+fun getReminder(numberStr: String?): Int? {
+    return numberStr?.toInt()?.times(3)?.plus(10)?.rem(11)
 }
