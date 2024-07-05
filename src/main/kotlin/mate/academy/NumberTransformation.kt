@@ -1,5 +1,8 @@
 package mate.academy
 
+const val MULTIPLY = 3
+const val ADD = 10
+const val REMAIMDER = 11
 /*
     Implement the function. The input String may contain number or be null.
     If the number is present, multiply it by 3, then add 10 and return the reminder of dividing by 11.
@@ -8,5 +11,5 @@ package mate.academy
 
 fun getReminder(numberStr: String?) : Int? {
     val number = numberStr?.toInt()
-    return if (numberStr == null) null else number?.times(3)?.plus(10)?.rem(11)
+    return if (numberStr == null) null else number?.times(MULTIPLY)?.plus(ADD)?.rem(REMAIMDER)
 }
