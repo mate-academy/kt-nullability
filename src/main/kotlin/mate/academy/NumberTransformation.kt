@@ -7,5 +7,14 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    if (numberStr == null) {
+        return null
+    }
+    return try {
+        val number = numberStr.toDouble()
+        val result = (number * 3 + 10) % 11
+        result.toInt()
+    } catch (e: NumberFormatException) {
+        null
+    }
 }
