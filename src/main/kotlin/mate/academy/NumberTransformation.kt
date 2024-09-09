@@ -7,5 +7,6 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    val number: Int? = if (numberStr == null) numberStr else (numberStr.toInt() * 3 + 10) % 11
+    return number
 }
