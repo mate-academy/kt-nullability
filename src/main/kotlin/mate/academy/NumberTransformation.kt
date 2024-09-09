@@ -13,3 +13,4 @@ const val ELEVEN = 11
 fun getReminder(numberStr: String?) : Int? {
     return numberStr?.toIntOrNull()?.times(THREE)?.plus(TEN)?.rem(ELEVEN)
 }
+
