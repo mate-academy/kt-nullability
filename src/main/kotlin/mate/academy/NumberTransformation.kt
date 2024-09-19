@@ -6,6 +6,11 @@ package mate.academy
     If the number is not present return null
  */
 
+const val TEN = 10
+const val TREE = 3
+const val ELEVEN = 11
+
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    val number = numberStr?.toInt()?.times(TREE)?.plus(TEN)
+    return number?.rem(ELEVEN) ?: null
 }
