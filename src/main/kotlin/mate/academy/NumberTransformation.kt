@@ -1,4 +1,7 @@
 package mate.academy
+const val TIMES = 3
+const val PLUS = 10
+const val REM = 11
 
 /*
     Implement the function. The input String may contain number or be null.
@@ -13,5 +16,5 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return if (numberStr != "") numberStr?.toInt()?.times(3)?.plus(10)?.rem(11) else null
+    return if (numberStr != "") numberStr?.toInt()?.times(TIMES)?.plus(PLUS)?.rem(REM) else null
 }
