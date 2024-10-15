@@ -1,5 +1,5 @@
 package mate.academy
-const val defaultPrice = 29.99
+const val DEFAULT_PRICE = 29.99
 
 /*
     Calculate the products total price based on the provide price per product and products amount.
@@ -12,5 +12,5 @@ const val defaultPrice = 29.99
  */
 
 fun calculateTotalPrice(pricePerProduct: Double?, count: Int) : Double {
-    return pricePerProduct?.times(count) ?: defaultPrice.times(count)
+    return pricePerProduct?.times(count) ?: DEFAULT_PRICE.times(count)
 }
