@@ -10,6 +10,6 @@ const val DIVIDING_NUMBER = 11
 
 fun getReminder(numberStr: String?) : Int? {
     return numberStr?.toIntOrNull()?.let { number ->
-        (MULTIPLY_NUMBER * 3 + NUMBER_TO_ADD) % DIVIDING_NUMBER
+        (number * MULTIPLY_NUMBER + NUMBER_TO_ADD) % DIVIDING_NUMBER
     }
 }
