@@ -7,5 +7,7 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    return numberStr?.toIntOrNull()?.let { number ->
+        (number * 3 + 10) % 11
+    }
 }
