@@ -1,4 +1,7 @@
 package mate.academy
+const val MULTIPLY = 3
+const val PLUS = 10
+const val REMINDER = 11
 
 /*
     Implement the function. The input String may contain number or be null.
@@ -7,5 +10,5 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    return numberStr?.toInt()?.times(MULTIPLY)?.plus(PLUS)?.rem(REMINDER)
 }
