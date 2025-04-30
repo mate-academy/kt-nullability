@@ -6,6 +6,10 @@ package mate.academy
     If the number is not present return null
  */
 
+const val TIMES = 3
+const val PLUS = 10
+const val DIV = 11
 fun getReminder(numberStr: String?) : Int? {
-    return null
+   val result = numberStr?.toIntOrNull()?.times(TIMES)?.plus(PLUS)?.rem(DIV)
+   return result
 }
