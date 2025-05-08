@@ -6,6 +6,10 @@ package mate.academy
     If the number is not present return null
  */
 
+const val THREE: Int = 3
+const val TEN: Int = 10
+const val ELEVEN: Int = 11
+
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    return if (numberStr != null) (numberStr.toInt() * THREE + TEN) % ELEVEN else null
 }
