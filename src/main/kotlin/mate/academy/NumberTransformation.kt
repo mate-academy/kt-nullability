@@ -11,12 +11,6 @@ const val ADDEND = 10
 
 const val DIVISOR = 11
 
-const val MULTIPLIER = 3
-
-const val ADDEND = 10
-
-const val DIVISOR = 11
-
 fun getReminder(numberStr: String?) : Int? {
 	return if (numberStr != null) (numberStr.toInt() *  MULTIPLIER + ADDEND) % DIVISOR else null
 }
