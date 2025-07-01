@@ -1,4 +1,7 @@
 package mate.academy
+const val BASIC_NUM_ONE = 3
+const val BASIC_NUM_TWO = 10
+const val BASIC_NUM_THREE = 11
 
 /*
     Implement the function. The input String may contain number or be null.
@@ -7,5 +10,6 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    val number = numberStr?.toIntOrNull() ?: return null
+    return (number * BASIC_NUM_ONE + BASIC_NUM_TWO) % BASIC_NUM_THREE
 }
