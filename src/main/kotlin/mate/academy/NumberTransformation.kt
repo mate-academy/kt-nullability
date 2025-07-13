@@ -5,7 +5,10 @@ package mate.academy
     If the number is present, multiply it by 3, then add 10 and return the reminder of dividing by 11.
     If the number is not present return null
  */
+const val FIRST : Int = 3
+const val SECOND : Int = 10
+const val THIRD : Int = 11
 
 fun getReminder(numberStr: String?) : Int? {
-    return numberStr?.toInt()?.times(3)?.plus(10)?.mod(11)
+    return numberStr?.toInt()?.times(FIRST)?.plus(SECOND)?.mod(THIRD)
 }
