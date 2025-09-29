@@ -9,7 +9,6 @@ package mate.academy
 private const val MULTIPLIER = 3
 private const val ADDITION = 10
 private const val DIVISOR = 11
-private const val DEFAULT_PRICE = 29.99
 
 fun getReminder(numberStr: String?) : Int? {
     return numberStr?.toIntOrNull()?.let { (it * MULTIPLIER + ADDITION) % DIVISOR }
