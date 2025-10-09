@@ -11,7 +11,7 @@ const val ADDITION = 10
 const val DIVISION = 11
 
 fun getReminder(numberStr: String?) : Int? {
-    val number: Int? = numberStr?.toIntOrNull() ?: return 0
+    val number: Int? = numberStr?.toIntOrNull()
     return number?.let {
         (it * MULTIPLIER + ADDITION) % DIVISION
     }
