@@ -7,7 +7,7 @@ package mate.academy
  */
 private const val MULTIPLUER = 3
 private const val ADDER = 10
-private const val DIVIDER = 10
+private const val DIVIDER = 11
 fun getReminder(numberStr: String?): Int? {
     return numberStr?.toInt()?.times(MULTIPLUER)?.plus(ADDER)?.rem(DIVIDER)
 }
