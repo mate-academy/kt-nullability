@@ -7,5 +7,7 @@ package mate.academy
  */
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    val int = numberStr?.toIntOrNull()
+
+    return int?.times(3)?.plus(10)?.rem(11)
 }
