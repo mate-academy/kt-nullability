@@ -1,11 +1,10 @@
 package mate.academy
 
-/*
-    Implement the function. The input String may contain number or be null.
-    If the number is present, multiply it by 3, then add 10 and return the reminder of dividing by 11.
-    If the number is not present return null
- */
+private const val NUMBER_THREE = 3
+private const val NUMBER_TEN = 10
+private const val NUMBER_ELEVEN = 11
 
 fun getReminder(numberStr: String?) : Int? {
-    return null
-}
+    return numberStr?.toInt()?.let {
+        (it * NUMBER_THREE + NUMBER_TEN) % NUMBER_ELEVEN }
+    }
