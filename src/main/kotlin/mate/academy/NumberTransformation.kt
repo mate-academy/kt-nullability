@@ -6,6 +6,11 @@ package mate.academy
     If the number is not present return null
  */
 
+const val MULTIPLY = 3
+const val ADD = 10
+const val DIVIDE = 11
+
 fun getReminder(numberStr: String?) : Int? {
-    return null
+    val res = if (numberStr != null) numberStr.toInt().times(MULTIPLY).plus(ADD).rem(DIVIDE) else null
+    return res
 }
